@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 import CakeContainer from './components/CakeContainer';
-
+import { Provider } from 'react-redux';
+import store from './redux/store'
 function App() {
   return (
-    <div className="App">
-      <CakeContainer/>
-    </div>
+    <Provider store={store}> {/*we need to pass the store as props in provider*/}
+      <div className="App">
+        <CakeContainer />
+      </div>
+    </Provider>
   );
 }
 
