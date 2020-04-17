@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store'
 import HooksCakeContainer from './components/HooksCakeContainer';
 import IcecreamContainer from './components/IcecreamContainer';
+import NewCakeContainer from './components/NewCakeContainer';
 function App() {
   return (
     <Provider store={store}> {/*we need to pass the store as props in provider*/}
@@ -12,6 +13,7 @@ function App() {
         <HooksCakeContainer />
         <CakeContainer />
         <IcecreamContainer />
+        <NewCakeContainer/>
       </div>
     </Provider>
   );
