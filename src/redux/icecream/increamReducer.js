@@ -10,9 +10,7 @@ const icecreamReducer = (state = initialState, action) => {
       ...state,
       noOfIcecream: state.noOfIcecream - 1
     }
-    default: return {
-      state
-    }
+    default: return state
   }
 }
 

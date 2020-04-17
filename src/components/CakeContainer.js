@@ -20,7 +20,7 @@ function CakeContainer(props) {
 //it receieves redux state as papmeter & retrieve state properties
 const mapStateToProps = state => {
   return {
-    noOfCake: state.noOfCake
+    noOfCake: state.cake.noOfCake
   }
 }
 
