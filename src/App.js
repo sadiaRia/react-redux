@@ -7,16 +7,18 @@ import HooksCakeContainer from './components/HooksCakeContainer';
 import IcecreamContainer from './components/IcecreamContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import ItemContainer from './components/ItemContainer';
+import UserContainer from './components/UserContainer';
 function App() {
   return (
     <Provider store={store}> {/*we need to pass the store as props in provider*/}
       <div className="App">
-        <ItemContainer />
+        <UserContainer/>
+        {/* <ItemContainer />
         <ItemContainer cake />
         <HooksCakeContainer />
         <CakeContainer />
         <IcecreamContainer />
-        <NewCakeContainer />
+        <NewCakeContainer /> */}
       </div>
     </Provider>
   );
